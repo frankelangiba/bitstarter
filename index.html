@@ -6,6 +6,9 @@
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-combined.no-icons.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
+          rel="stylesheet" type="text/css">
     <style type="text/css">
 
       /* Large desktop */
@@ -16,12 +19,26 @@
       }
 
 
-    body { padding: 20px 0 40px 0; }
-    .container { width: 960px; }
-    p.lead { padding-top: 15px; }
-    .navigation, .pitch, .section1, .section2, .faq, .footer{
-      padding: 10px 0 10px 0;
-    }
+      /* All form factors */
+
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
     .video, .thermometer, .order, .social {
       border: 1px dotted;
       text-align: center;
@@ -62,16 +79,20 @@
     </div>
 
     <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">Logo</div>
-        <div class="span6 blank">Blank</div>
-        <div class="span4 about">About</div>
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Product</h1>
+        </div>
       </div>
-      <div class="row heading">
-        <div class="span12"><h1>Bitstarter Title</h1></div>
-      </div>
-      <div class="row subheading">
-        <div class="span12"><p class="lead">This is my first bitstarter project.</p></div>
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">One sentence description.</p>
+        </div>
       </div>
       <div class="row pitch">
         <div class="span6 video">Video</div>
